@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – Aabha By Latha</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <a href="index.html">
+        <svg viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg" class="nav-logo-svg">
+          <text x="0" y="36" font-family="Cormorant Garamond" font-size="30" fill="#c9a27e" font-style="italic" font-weight="300">Aabha</text>
+          <text x="3" y="46" font-family="Josefin Sans" font-size="7" fill="#e8d5c0" letter-spacing="5">BY LATHA</text>
+        </svg>
+      </a>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="btn-book">Book Now</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <p class="section-label">Our Story</p>
+      <h1>About <span class="serif-italic gold">Aabha</span></h1>
+      <p>A legacy of beauty, built with heart</p>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="about-story section-pad">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-frame">
+            <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" class="about-portrait">
+              <defs>
+                <radialGradient id="bg1" cx="50%" cy="50%" r="70%">
+                  <stop offset="0%" stop-color="#3d1c2e"/>
+                  <stop offset="100%" stop-color="#1a0a12"/>
+                </radialGradient>
+                <radialGradient id="skin1" cx="50%" cy="35%" r="70%">
+                  <stop offset="0%" stop-color="#f5d5b8"/>
+                  <stop offset="100%" stop-color="#c9956a"/>
+                </radialGradient>
+              </defs>
+              <rect width="280" height="360" fill="url(#bg1)"/>
+              <!-- Body -->
+              <path d="M70 360 Q70 260 100 240 Q140 225 140 225 Q140 225 180 240 Q210 260 210 360" fill="#4a2040" opacity="0.9"/>
+              <!-- Saree drape hint -->
+              <path d="M80 360 Q90 310 110 290 Q140 270 170 290 Q190 310 200 360" fill="#5a1830" opacity="0.8"/>
+              <path d="M110 290 Q140 278 170 290" fill="none" stroke="#c9a27e" stroke-width="1" opacity="0.7"/>
+              <!-- Neck -->
+              <rect x="126" y="175" width="28" height="55" rx="14" fill="url(#skin1)"/>
+              <!-- Head -->
+              <ellipse cx="140" cy="140" rx="52" ry="60" fill="url(#skin1)"/>
+              <!-- Hair -->
+              <path d="M88 120 Q88 80 140 68 Q192 80 192 120 Q192 88 140 72 Q88 88 88 120" fill="#2a1008"/>
+              <path d="M88 120 Q80 155 84 175 Q100 185 88 120" fill="#2a1008"/>
+              <path d="M192 120 Q200 155 196 175 Q180 185 192 120" fill="#2a1008"/>
+              <!-- Face features -->
+              <ellipse cx="124" cy="135" rx="7" ry="8" fill="#f0c8a0" opacity="0.5"/>
+              <ellipse cx="156" cy="135" rx="7" ry="8" fill="#f0c8a0" opacity="0.5"/>
+              <ellipse cx="124" cy="133" rx="4" ry="4.5" fill="#3a1a0a"/>
+              <ellipse cx="156" cy="133" rx="4" ry="4.5" fill="#3a1a0a"/>
+              <circle cx="125.5" cy="131.5" r="1.5" fill="white" opacity="0.8"/>
+              <circle cx="157.5" cy="131.5" r="1.5" fill="white" opacity="0.8"/>
+              <!-- Nose -->
+              <ellipse cx="140" cy="150" rx="4" ry="3" fill="#c9956a" opacity="0.5"/>
+              <!-- Lips -->
+              <path d="M128 160 Q140 168 152 160" fill="#d45070" opacity="0.9"/>
+              <path d="M128 160 Q140 154 152 160" fill="#c04060" opacity="0.7"/>
+              <!-- Bindi -->
+              <circle cx="140" cy="116" r="4" fill="#d42050"/>
+              <!-- Earrings -->
+              <circle cx="88" cy="148" r="5" fill="none" stroke="#c9a27e" stroke-width="1.5"/>
+              <path d="M88 153 L88 162" stroke="#c9a27e" stroke-width="1.5"/>
+              <circle cx="88" cy="164" r="3" fill="#c9a27e" opacity="0.8"/>
+              <circle cx="192" cy="148" r="5" fill="none" stroke="#c9a27e" stroke-width="1.5"/>
+              <path d="M192 153 L192 162" stroke="#c9a27e" stroke-width="1.5"/>
+              <circle cx="192" cy="164" r="3" fill="#c9a27e" opacity="0.8"/>
+              <!-- Necklace -->
+              <path d="M118 198 Q140 210 162 198" fill="none" stroke="#c9a27e" stroke-width="2"/>
+              <circle cx="140" cy="212" r="4" fill="#c9a27e" opacity="0.9"/>
+              <!-- Decorative border -->
+              <rect x="5" y="5" width="270" height="350" fill="none" stroke="#c9a27e" stroke-width="0.8" opacity="0.4"/>
+              <rect x="10" y="10" width="260" height="340" fill="none" stroke="#c9a27e" stroke-width="0.4" opacity="0.3"/>
+              <!-- Corner florals -->
+              <circle cx="20" cy="20" r="6" fill="none" stroke="#c9a27e" stroke-width="0.8" opacity="0.5"/>
+              <circle cx="260" cy="20" r="6" fill="none" stroke="#c9a27e" stroke-width="0.8" opacity="0.5"/>
+              <circle cx="20" cy="340" r="6" fill="none" stroke="#c9a27e" stroke-width="0.8" opacity="0.5"/>
+              <circle cx="260" cy="340" r="6" fill="none" stroke="#c9a27e" stroke-width="0.8" opacity="0.5"/>
+            </svg>
+            <div class="about-frame-tag">
+              <span class="serif-italic">Latha</span>
+              <span>Master Beautician</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-label">The Artist Behind Aabha</p>
+          <h2 class="section-title">Passion Meets <span class="serif-italic gold">Precision</span></h2>
+          <p class="about-lead">Aabha By Latha was born from a deep love for beauty and an unwavering commitment to making every woman feel her most radiant self.</p>
+          <p>Since 2008, Latha has been transforming clients in Kochi with her expert touch, keen eye for detail, and genuine warmth. What began as a single beauty parlour on Shobha Road has grown into one of the most trusted beauty destinations in Vennala and Palarivattam.</p>
+          <p>Specialising in bridal makeup, hair styling, and holistic skin care, Latha brings decades of experience to every appointment. Her philosophy is simple: every woman deserves to feel beautiful, and that beauty should be as unique as she is.</p>
+          <blockquote class="about-quote">
+            <p>"All types of beauty services available here — crafted with care, love, and artistry."</p>
+            <cite>— Latha, Founder</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="values section-pad">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What We Stand For</p>
+        <h2 class="section-title">Our <span class="serif-italic gold">Values</span></h2>
+        <div class="title-ornament">✦</div>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal-card" data-delay="0">
+          <div class="value-icon">✦</div>
+          <h3>Artistry</h3>
+          <p>Every stroke, every style is executed with the precision of an artist and the instinct of experience.</p>
+        </div>
+        <div class="value-card reveal-card" data-delay="150">
+          <div class="value-icon">♡</div>
+          <h3>Care</h3>
+          <p>We listen, we understand, and we create looks that celebrate your individuality in the most caring environment.</p>
+        </div>
+        <div class="value-card reveal-card" data-delay="300">
+          <div class="value-icon">✿</div>
+          <h3>Quality</h3>
+          <p>Only premium products and techniques that respect and nourish your skin and hair.</p>
+        </div>
+        <div class="value-card reveal-card" data-delay="450">
+          <div class="value-icon">◈</div>
+          <h3>Affordability</h3>
+          <p>Luxury beauty should be accessible. We offer exceptional services at economical, transparent prices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="timeline-section section-pad">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Our Journey</p>
+        <h2 class="section-title">A <span class="serif-italic gold">Legacy</span> Built Over Years</h2>
+        <div class="title-ornament">✦</div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item left reveal-card">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2008</span>
+            <h3>The Beginning</h3>
+            <p>Aabha Beauty Parlour opens its doors on Shobha Road, Vennala, with a vision to bring premium beauty services to the community.</p>
+          </div>
+        </div>
+        <div class="timeline-item right reveal-card">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2012</span>
+            <h3>Growing Reputation</h3>
+            <p>Word of mouth spreads through Kochi. Aabha becomes the go-to destination for bridal makeup and special occasions.</p>
+          </div>
+        </div>
+        <div class="timeline-item left reveal-card">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2016</span>
+            <h3>Expanding Services</h3>
+            <p>New hair treatments, advanced facials and skin care services added to serve our growing family of clients.</p>
+          </div>
+        </div>
+        <div class="timeline-item right reveal-card">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2020</span>
+            <h3>Going Digital</h3>
+            <p>Aabha joins Instagram, sharing beauty transformations and connecting with a wider community across Kerala.</p>
+          </div>
+        </div>
+        <div class="timeline-item left reveal-card">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3>Still Going Strong</h3>
+            <p>16+ years on, Aabha By Latha continues to be a beloved beauty destination with thousands of happy clients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <div class="cta-decor left"></div>
+      <div class="cta-content">
+        <p class="section-label">Meet Us in Person</p>
+        <h2>We'd Love to <span class="serif-italic gold">Meet You</span></h2>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn-primary">Get in Touch</a>
+          <a href="services.html" class="btn-outline">See Services</a>
+        </div>
+      </div>
+      <div class="cta-decor right"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg" class="footer-logo">
+          <text x="0" y="38" font-family="Cormorant Garamond" font-size="34" fill="#c9a27e" font-style="italic" font-weight="300">Aabha</text>
+          <text x="3" y="50" font-family="Josefin Sans" font-size="8" fill="#e8d5c0" letter-spacing="5">BY LATHA</text>
+        </svg>
+        <p>Beauty, Cosmetic & Personal Care<br>Kochi, Kerala · Since 2008</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Visit Us</h4>
+        <p>Mekkara Temple Road, Sobha Road<br>Vennala, Kochi, Kerala 682028</p>
+        <p><a href="tel:+919995834939">099958 34939</a></p>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/aabha_latha_hairandmakeup" target="_blank" class="social-btn instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Aabha By Latha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

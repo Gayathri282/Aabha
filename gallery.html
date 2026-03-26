@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery – Aabha By Latha</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <a href="index.html">
+        <svg viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg" class="nav-logo-svg">
+          <text x="0" y="36" font-family="Cormorant Garamond" font-size="30" fill="#c9a27e" font-style="italic" font-weight="300">Aabha</text>
+          <text x="3" y="46" font-family="Josefin Sans" font-size="7" fill="#e8d5c0" letter-spacing="5">BY LATHA</text>
+        </svg>
+      </a>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="btn-book">Book Now</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <p class="section-label">Our Work</p>
+      <h1>The <span class="serif-italic gold">Gallery</span></h1>
+      <p>Moments of beauty we've had the honour to create</p>
+    </div>
+  </section>
+
+  <section class="gallery-section section-pad">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+        <button class="filter-btn" data-filter="hair">Hair</button>
+        <button class="filter-btn" data-filter="party">Party</button>
+        <button class="filter-btn" data-filter="skin">Skin Care</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="gallery-grid">
+
+        <!-- Bridal items -->
+        <div class="gallery-item bridal tall" data-category="bridal">
+          <div class="gallery-thumb" style="background: linear-gradient(135deg, #3d1c2e 0%, #6b3050 50%, #c9a27e 100%)">
+            <div class="gallery-overlay">
+              <div class="gallery-svg-art">
+                <svg viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="60" cy="65" rx="35" ry="40" fill="#f5d0b0" opacity="0.9"/>
+                  <path d="M25 65 Q25 130 60 145 Q95 130 95 65" fill="#f5d0b0" opacity="0.6"/>
+                  <path d="M30 140 Q60 155 90 140 Q85 160 60 165 Q35 160 30 140" fill="#3d1c2e" opacity="0.8"/>
+                  <circle cx="50" cy="58" r="5" fill="#c9a27e" opacity="0.9"/>
+                  <circle cx="70" cy="58" r="5" fill="#c9a27e" opacity="0.9"/>
+                  <path d="M45 78 Q60 88 75 78" fill="none" stroke="#c9a27e" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <p class="gallery-label">Bridal Look</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item bridal" data-category="bridal">
+          <div class="gallery-thumb" style="background: linear-gradient(135deg, #1a0a10 0%, #5a2040 60%, #e8b89a 100%)">
+            <div class="gallery-overlay">
+              <div class="gallery-svg-art small">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="40" r="28" fill="#f5d0b0" opacity="0.85"/>
+                  <path d="M25 40 Q25 80 50 88 Q75 80 75 40" fill="#f5d0b0" opacity="0.55"/>
+                  <circle cx="42" cy="35" r="3" fill="#4a1a35"/>
+                  <circle cx="58" cy="35" r="3" fill="#4a1a35"/>
+                  <path d="M42 50 Q50 56 58 50" fill="none" stroke="#c97a6a" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <p class="gallery-label">Engagement</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item hair" data-category="hair">
+          <div class="gallery-thumb" style="background: linear-gradient(135deg, #0f1a0f 0%, #2a4a2a 60%, #8a7040 100%)">
+            <div class="gallery-overlay">
+              <div class="gallery-svg-art small">
+                <svg viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="50" cy="38" rx="26" ry="30" fill="#f5d0b0" opacity="0.85"/>
+                  <path d="M25 38 Q20 70 50 85 Q80 70 75 38" fill="#f5d0b0" opacity="0.55"/>
+                  <path d="M24 30 Q50 5 76 30 Q78 15 50 5 Q22 15 24 30" fill="#3a2010" opacity="0.9"/>
+                  <path d="M24 30 Q30 25 50 20 Q70 25 76 30 Q70 15 50 10 Q30 15 24 30" fill="#5a3820" opacity="0.7"/>
+                </svg>
+              </div>
+              <p class="gallery-label">Hair Styling</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item party tall" data-category="party">
+          <div class="gallery-thumb" style="background: linear-gradient(135deg, #0a0a2a 0%, #2a2060 50%, #c9a27e 100%)">
+            <div class="gallery-overlay">
+              <div class="gallery-svg-art">
+                <svg viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="60" cy="62" rx="33" ry="38" fill="#f5d0b0" opacity="0.9"/>
+                  <path d="M28 62 Q28 128 60 142 Q92 128 92 62" fill="#f5d0b0" opacity="0.6"/>
+                  <circle cx="50" cy="55" r="3.5" fill="#2a2060"/>
+                  <circle cx="70" cy="55" r="3.5" fill="#2a2060"/>
+                  <path d="M45 76 Q60 84 75 76" fill="none" stroke="#d4506a" stroke-width="2"/>
+                  <circle cx="42" cy="48" r="8" fill="none" stroke="#c9a27e" stroke-width="0.8" opacity="0.6"/>
+                  <circle cx="78" cy="48" r="8" fill="none" stroke="#c9a27e" stroke-width="0.8" opacity="0.6"/>
+                </svg>
+              </div>
+              <p class="gallery-label">Party Glam</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item skin" data-category="skin">
+          <div class="gallery-thumb" style="background: linear-gradient(135deg, #1a1008 0%, #4a3020 60%, #d4b090 100%)">
+            <div class="gallery-overlay">
+              <div class="gallery-svg-art small">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="50" r="38" fill="#f5d8c0" opacity="0.85"/>
+                  <circle cx="50" cy="50" r="38" fill="none" stroke="#c9a27e" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+                  <circle cx="50" cy="40" r="15" fill="#f0c8a8" opacity="0.7"/>
+                  <path d="M35 58 Q50 66 65 58" fill="none" stroke="#d4906a" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <p class="gallery-label">Facial Glow</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item bridal" data-category="bridal">
+          <div class="gallery-thumb" style="background: linear-gradient(135deg, #2a0a1a 0%, #8a4060 50%, #f0c890 100%)">
+            <div class="gallery-overlay">
+              <div class="gallery-svg-art small">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="50" cy="42" rx="28" ry="32" fill="#f5d0b0" opacity="0.85"/>
+                  <path d="M24 42 Q24 80 50 90 Q76 80 76 42" fill="#f5d0b0" opacity="0.55"/>
+                  <path d="M22 35 Q50 8 78 35" fill="#4a1028" opacity="0.9"/>
+                  <circle cx="42" cy="37" r="4" fill="none" stroke="#c9a27e" stroke-width="1.5"/>
+                  <circle cx="58" cy="37" r="4" fill="none" stroke="#c9a27e" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <p class="gallery-label">Kerala Bridal</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item hair tall" data-category="hair">
+          <div class="gallery-thumb" style="background: linear-gradient(135deg, #100808 0%, #401820 60%, #c08040 100%)">
+            <div class="gallery-overlay">
+              <div class="gallery-svg-art">
+                <svg viewBox="0 0 120 180" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="60" cy="65" rx="34" ry="38" fill="#f5d0b0" opacity="0.88"/>
+                  <path d="M26 65 Q26 128 60 142 Q94 128 94 65" fill="#f5d0b0" opacity="0.55"/>
+                  <path d="M26 52 Q60 22 94 52 Q95 30 60 18 Q25 30 26 52" fill="#2a1008" opacity="0.92"/>
+                  <path d="M94 52 Q98 80 94 110" fill="none" stroke="#5a3010" stroke-width="8" stroke-linecap="round"/>
+                  <path d="M94 110 Q90 135 82 148" fill="none" stroke="#5a3010" stroke-width="6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <p class="gallery-label">Hair Color</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item party" data-category="party">
+          <div class="gallery-thumb" style="background: linear-gradient(135deg, #080820 0%, #201848 60%, #b89060 100%)">
+            <div class="gallery-overlay">
+              <div class="gallery-svg-art small">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="50" cy="42" rx="26" ry="30" fill="#f5d0b0" opacity="0.85"/>
+                  <path d="M26 42 Q26 78 50 86 Q74 78 74 42" fill="#f5d0b0" opacity="0.55"/>
+                  <circle cx="42" cy="37" r="3" fill="#201848"/>
+                  <circle cx="58" cy="37" r="3" fill="#201848"/>
+                  <path d="M40 53 Q50 60 60 53" fill="none" stroke="#e04080" stroke-width="2"/>
+                  <path d="M32 28 Q50 10 68 28" fill="none" stroke="#c9a27e" stroke-width="1.5" opacity="0.7"/>
+                </svg>
+              </div>
+              <p class="gallery-label">Evening Look</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end gallery-grid -->
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">✕</button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <div class="cta-decor left"></div>
+      <div class="cta-content">
+        <p class="section-label">Follow Our Journey</p>
+        <h2>See More on <span class="serif-italic gold">Instagram</span></h2>
+        <div class="cta-actions">
+          <a href="https://www.instagram.com/aabha_latha_hairandmakeup" target="_blank" class="btn-primary">Visit Instagram</a>
+        </div>
+      </div>
+      <div class="cta-decor right"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg" class="footer-logo">
+          <text x="0" y="38" font-family="Cormorant Garamond" font-size="34" fill="#c9a27e" font-style="italic" font-weight="300">Aabha</text>
+          <text x="3" y="50" font-family="Josefin Sans" font-size="8" fill="#e8d5c0" letter-spacing="5">BY LATHA</text>
+        </svg>
+        <p>Beauty, Cosmetic & Personal Care<br>Kochi, Kerala · Since 2008</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Visit Us</h4>
+        <p>Mekkara Temple Road, Sobha Road<br>Vennala, Kochi, Kerala 682028</p>
+        <p><a href="tel:+919995834939">099958 34939</a></p>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/aabha_latha_hairandmakeup" target="_blank" class="social-btn instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Aabha By Latha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

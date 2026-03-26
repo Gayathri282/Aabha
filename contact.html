@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Aabha By Latha</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <a href="index.html">
+        <svg viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg" class="nav-logo-svg">
+          <text x="0" y="36" font-family="Cormorant Garamond" font-size="30" fill="#c9a27e" font-style="italic" font-weight="300">Aabha</text>
+          <text x="3" y="46" font-family="Josefin Sans" font-size="7" fill="#e8d5c0" letter-spacing="5">BY LATHA</text>
+        </svg>
+      </a>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="btn-book">Book Now</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <p class="section-label">Get In Touch</p>
+      <h1>Contact <span class="serif-italic gold">Us</span></h1>
+      <p>We'd love to hear from you</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section section-pad">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Info cards -->
+        <div class="contact-info">
+          <div class="info-card reveal-card" data-delay="0">
+            <div class="info-icon">📍</div>
+            <div>
+              <h3>Visit Us</h3>
+              <p>Mekkara Temple Road, Sobha Road<br>Vennala, Palarivattam<br>Kochi, Kerala 682028</p>
+            </div>
+          </div>
+          <div class="info-card reveal-card" data-delay="100">
+            <div class="info-icon">📞</div>
+            <div>
+              <h3>Call Us</h3>
+              <p><a href="tel:+919995834939">099958 34939</a></p>
+              <p class="info-sub">Available during working hours</p>
+            </div>
+          </div>
+          <div class="info-card reveal-card" data-delay="200">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h3>Working Hours</h3>
+              <div class="hours-table">
+                <div class="hours-row"><span>Monday</span><span>Open – 9:00 PM</span></div>
+                <div class="hours-row"><span>Tuesday</span><span>Open – 9:00 PM</span></div>
+                <div class="hours-row"><span>Wednesday</span><span>Open – 9:00 PM</span></div>
+                <div class="hours-row"><span>Thursday</span><span>Open – 9:00 PM</span></div>
+                <div class="hours-row"><span>Friday</span><span>Open – 9:00 PM</span></div>
+                <div class="hours-row"><span>Saturday</span><span>Open – 9:00 PM</span></div>
+                <div class="hours-row"><span>Sunday</span><span>Open – 9:00 PM</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="info-card reveal-card" data-delay="300">
+            <div class="info-icon">📸</div>
+            <div>
+              <h3>Follow on Instagram</h3>
+              <a href="https://www.instagram.com/aabha_latha_hairandmakeup" target="_blank" class="insta-link">@aabha_latha_hairandmakeup</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal-card" data-delay="0">
+          <div class="form-header">
+            <p class="section-label">Send a Message</p>
+            <h2>Book an <span class="serif-italic gold">Appointment</span></h2>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Priya Sharma" required/>
+                <span class="form-error" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required/>
+                <span class="form-error" id="phone-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service…</option>
+                <option value="bridal">Bridal Makeup</option>
+                <option value="engagement">Engagement Makeup</option>
+                <option value="party">Party Makeup</option>
+                <option value="hair">Hair Styling / Color</option>
+                <option value="facial">Facial / Skin Care</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date"/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your occasion, preferred time, or any special requests…"></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <span class="btn-text">Send Enquiry</span>
+              <span class="btn-icon">→</span>
+            </button>
+            <div class="form-success" id="form-success">
+              <span>✓</span> Thank you! We'll get in touch with you shortly.
+            </div>
+          </form>
+        </div>
+
+      </div><!-- end contact-grid -->
+
+      <!-- Map Embed placeholder -->
+      <div class="map-section">
+        <div class="map-header">
+          <h3>Find <span class="serif-italic gold">Us</span></h3>
+        </div>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.9541613580034!2d76.31159997481073!3d10.00168689005048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c3cee6b0b19%3A0x6b7a63413e3e6d4c!2sPalarivattom%2C%20Kochi%2C%20Kerala%20682025!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Aabha By Latha Location">
+          </iframe>
+          <div class="map-overlay-pin">
+            <div class="pin-dot"></div>
+            <div class="pin-label">Aabha By Latha<br><small>Vennala, Kochi</small></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg" class="footer-logo">
+          <text x="0" y="38" font-family="Cormorant Garamond" font-size="34" fill="#c9a27e" font-style="italic" font-weight="300">Aabha</text>
+          <text x="3" y="50" font-family="Josefin Sans" font-size="8" fill="#e8d5c0" letter-spacing="5">BY LATHA</text>
+        </svg>
+        <p>Beauty, Cosmetic & Personal Care<br>Kochi, Kerala · Since 2008</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Visit Us</h4>
+        <p>Mekkara Temple Road, Sobha Road<br>Vennala, Kochi, Kerala 682028</p>
+        <p><a href="tel:+919995834939">099958 34939</a></p>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/aabha_latha_hairandmakeup" target="_blank" class="social-btn instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Aabha By Latha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
